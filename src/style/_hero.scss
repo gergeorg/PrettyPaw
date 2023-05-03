@@ -1,0 +1,99 @@
+.hero {
+  position: relative;
+  background-image: url("../img/hero-bg@1x.jpg");
+  background-image:
+    image-set(
+      url("../img/hero-bg@2x.webp") 2x,
+      url("../img/hero-bg@1x.webp") 1x,
+      url("../img/hero-bg@2x.jpg") 2x,
+      url("../img/hero-bg@1x.jpg") 1x
+    );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 9;
+    background-image: linear-gradient(180deg, rgb(0 0 0 / 0%) 35.38%, #000 100%);
+    inset: 0;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    min-height: 554px;
+
+    @include xl {
+      padding-bottom: 74px;
+      min-height: 780px;
+    }
+
+    @include xxl {
+      padding-bottom: 100px;
+      min-height: 100vh;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $orange;
+
+    @include lg {
+      font-size: 52px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $white;
+
+    @include lg {
+      font-size: 40px;
+    }
+  }
+
+  &__video-bg {
+    z-index: 8;
+  }
+
+  @include md {
+    background-image: url("../img/hero-bg-desktop@1x.jpg");
+    background-image:
+      image-set(
+        url("../img/hero-bg-desktop@1x.webp") 1x,
+        url("../img/hero-bg-desktop@1x.jpg") 1x
+      );
+  }
+
+  @include xl {
+    background-image: url("../img/hero-bg-desktop@2x.jpg");
+    background-image:
+      image-set(
+        url("../img/hero-bg-desktop@4x.webp") 4x,
+        url("../img/hero-bg-desktop@2x.webp") 2x,
+        url("../img/hero-bg-desktop@4x.jpg") 4x,
+        url("../img/hero-bg-desktop@2x.jpg") 2x
+      );
+  }
+
+  @include xxl {
+    background-image: url("../img/hero-bg-desktop@4x.jpg");
+    background-image:
+      image-set(
+        url("../img/hero-bg-desktop@4x.webp") 4x,
+        url("../img/hero-bg-desktop@4x.jpg") 4x
+      );
+  }
+}

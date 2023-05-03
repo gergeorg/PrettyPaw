@@ -1,0 +1,59 @@
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  // &__container {  }
+
+  &__logo {
+    margin-bottom: 32px;
+    width: 200px;
+    height: 32px;
+
+    @include sm {
+      margin-bottom: 0;
+    }
+
+    @include lg {
+      width: 360px;
+      height: 56px;
+    }
+  }
+
+  // &__social-list {}
+
+  // &__developers {}
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  margin-bottom: 52px;
+  gap: 16px;
+
+  &__link {
+    display: inline-flex;
+    width: 36px;
+    height: 36px;
+
+    @include lg {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @include sm {
+    margin-bottom: 0;
+  }
+}
+
+.developers {
+  margin-bottom: 52px;
+
+  &__item {
+    margin-bottom: 19px;
+  }
+
+  @include sm {
+    margin-bottom: 0;
+  }
+}

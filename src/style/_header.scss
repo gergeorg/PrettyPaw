@@ -1,0 +1,29 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 15;
+  padding: 22px 0;
+  background-color: $black;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 200px;
+    height: 32px;
+
+    @include lg {
+      width: 360px;
+      height: 56px;
+    }
+  }
+
+  @include lg {
+    padding: 30px;
+  }
+}
