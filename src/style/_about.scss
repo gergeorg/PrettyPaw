@@ -1,0 +1,166 @@
+.about {
+  padding: 80px 0;
+
+  &__container {
+    @include lg {
+      display: grid;
+      grid-template-areas:
+        "title title"
+        "slider content";
+      grid-template-columns: 48% 1fr;
+      gap: 40px 20px;
+    }
+
+    @include xl {
+      grid-template-areas:
+        "slider title"
+        "slider content";
+      grid-template-rows: min-content 1fr;
+      gap: 40px 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 1000;
+    font-size: 32px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $white;
+
+    @include lg {
+      grid-area: title;
+      margin-bottom: 0;
+      font-size: 52px;
+    }
+  }
+
+  &__content {
+    margin-bottom: 13px;
+    padding-bottom: 27px;
+    background-image: url("../img/paw.svg");
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @include md {
+      display: grid;
+      grid-template-areas:
+        "descr counter"
+        "link counter";
+      grid-template-columns: 1fr min-content;
+      background-position: right bottom;
+      gap: 24px 92px;
+    }
+
+    @include lg {
+      grid-area: content;
+      grid-template-areas:
+        "descr"
+        "counter"
+        "link";
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      background-position: center;
+      gap: 40px;
+    }
+
+    @include xl {
+      gap: 60px;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 24px;
+
+    @include md {
+      grid-area: descr;
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    margin-bottom: 40px;
+
+    @include md {
+      justify-self: start;
+      grid-area: link;
+      margin-bottom: 0;
+    }
+
+    @include lg {
+      align-self: end;
+    }
+  }
+
+  &__count-list {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    font-weight: 1000;
+    line-height: 1;
+    color: $white;
+    gap: 20px;
+
+    @include lg {
+      grid-template-columns: repeat(2, 200px);
+      gap: 30px;
+    }
+
+    @include md {
+      grid-area: counter;
+    }
+  }
+
+  &__count {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 40px;
+
+    @include lg {
+      margin-bottom: 24px;
+      font-size: 52px;
+    }
+  }
+
+  &__picture {
+    @include lg {
+      grid-area: slider;
+    }
+  }
+
+  &__bullet-active {
+    border-radius: 16px;
+    width: 40px;
+    height: 10px;
+    background: $orange;
+  }
+
+  &__bullet {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: $white;
+  }
+
+  // &__slider {
+
+  // }
+
+  // &__picture-list {}
+
+  // &__slide-item {}
+
+  // &__slide-pic {}
+
+  &__image {
+    border-radius: 16px;
+  }
+
+  // &__slider-pagination {}
+
+  @include lg {
+    padding: 100px 0;
+  }
+}

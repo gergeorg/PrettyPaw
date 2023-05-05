@@ -1,9 +1,16 @@
 import "./index.html";
+
+import "swiper/scss/pagination";
+import "swiper/scss";
 import "./index.scss";
 
-import Swiper from "swiper";
-import "swiper/scss";
-import "swiper/scss/pagination";
+import { sliderInit } from "./modules/sliders";
+
+sliderInit(".about__slider", {
+  pagination: {
+    el: ".about__slider-pagination",
+  },
+});
 
 const videoBg = document.querySelector(".video-bg");
 

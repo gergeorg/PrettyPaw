@@ -4,31 +4,31 @@ $white: hsl(0deg 0% 100%);
 $gray: hsl(0deg 0% 76%);
 
 @mixin sm {
-  @media (width >= 540px) {
+  @media (min-width: 540px) {
     @content;
   }
 }
 
 @mixin md {
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     @content;
   }
 }
 
 @mixin lg {
-  @media (width >= 1024px) {
+  @media (min-width: 1024px) {
     @content;
   }
 }
 
 @mixin xl {
-  @media (width >= 1240px) {
+  @media (min-width: 1240px) {
     @content;
   }
 }
 
 @mixin xxl {
-  @media (width >= 1600px) {
+  @media (min-width: 1600px) {
     @content;
   }
 }

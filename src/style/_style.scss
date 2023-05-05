@@ -106,6 +106,7 @@ iframe {
 }
 
 .link {
+  display: inline-block;
   border-radius: 80px;
   padding: 12px 20px;
   font-weight: 1000;
@@ -114,5 +115,29 @@ iframe {
 
   &__text {
     margin-right: 4px;
+
+    @include lg {
+      margin-right: 10px;
+    }
   }
+
+  @include lg {
+    padding: 17px 32px;
+    font-size: 20px;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: $white;
+  opacity: 1;
+
+  // transition: width 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  border-radius: 16px;
+  width: 40px;
+  background: $orange;
 }
