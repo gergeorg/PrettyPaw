@@ -1,0 +1,102 @@
+.career {
+  overflow-x: hidden;
+  padding-top: 80px;
+  padding-bottom: 30px;
+
+  &__content {
+    margin-bottom: 40px;
+
+    @include md {
+      display: grid;
+      justify-content: space-between;
+      grid-template-areas:
+        "title link"
+        "descr .";
+      grid-template-columns: 1fr max-content;
+      gap: 11px 21px;
+    }
+
+    @include lg {
+      margin-bottom: 50px;
+      gap: 27px 31px;
+    }
+
+    @include xl {
+      grid-template-columns: 690px max-content;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 1000;
+    font-size: 32px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $white;
+
+    @include md {
+      grid-area: title;
+      margin-bottom: 0;
+    }
+
+    @include lg {
+      font-size: 52px;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 24px;
+
+    @include md {
+      grid-area: descr;
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    @include md {
+      grid-area: link;
+    }
+  }
+
+  &__slider {
+    overflow: visible;
+  }
+
+  &__slider-list {}
+
+  &__slider-item {
+    display: flex;
+    align-items: center;
+    height: unset;
+
+    @include md {
+      &:nth-child(odd) {
+        width: 34%;
+      }
+
+      &:nth-child(even) {
+        width: 25%;
+      }
+    }
+
+    @include xl {
+      &:nth-child(odd) {
+        width: 27%;
+      }
+
+      &:nth-child(even) {
+        width: 20%;
+      }
+    }
+  }
+
+  &__slide-img {
+    border-radius: 16px;
+  }
+
+  @include lg {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}

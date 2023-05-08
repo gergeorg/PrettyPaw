@@ -348,27 +348,29 @@
 
       <section class="career">
         <div class="container career__container">
-          <h2 class="career__title">Карьера у нас</h2>
-          <p class="career__descr">
-            Карьера в&nbsp;компании &laquo;Зоосад&raquo; может предоставить
-            много интересных и&nbsp;перспективных возможностей для людей,
-            увлеченных животными и&nbsp;желающих развиваться в&nbsp;этой
-            области.
-          </p>
-          <a href="#" class="career__link link">
-            <span class="link__text">Подробнее</span>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5.53317 10.8667C5.41095 10.7445 5.34695 10.5889 5.34117 10.4C5.3354 10.2111 5.39384 10.0556 5.51651 9.93335L8.78317 6.66668H1.33317C1.14428 6.66668 0.98584 6.60268 0.85784 6.47468C0.72984 6.34668 0.666062 6.18846 0.666506 6.00001C0.666506 5.81112 0.730506 5.65268 0.858506 5.52468C0.986506 5.39668 1.14473 5.3329 1.33317 5.33335H8.78317L5.51651 2.06668C5.39428 1.94446 5.33584 1.7889 5.34117 1.60001C5.34651 1.41112 5.41051 1.25557 5.53317 1.13335C5.6554 1.01112 5.81095 0.950012 5.99984 0.950012C6.18873 0.950012 6.34428 1.01112 6.46651 1.13335L10.8665 5.53335C10.9332 5.5889 10.9805 5.65846 11.0085 5.74201C11.0365 5.82557 11.0503 5.91157 11.0498 6.00001C11.0498 6.0889 11.0361 6.17223 11.0085 6.25001C10.981 6.32779 10.9336 6.40001 10.8665 6.46668L6.46651 10.8667C6.34428 10.9889 6.18873 11.05 5.99984 11.05C5.81095 11.05 5.6554 10.9889 5.53317 10.8667Z"
-              />
-            </svg>
-          </a>
+          <div class="career__content">
+            <h2 class="career__title">Карьера у нас</h2>
+            <p class="career__descr">
+              Карьера в&nbsp;компании &laquo;Pretty Paw&raquo; может
+              предоставить много интересных и&nbsp;перспективных возможностей
+              для людей, увлеченных животными и&nbsp;желающих развиваться
+              в&nbsp;этой области.
+            </p>
+            <a href="#" class="career__link link">
+              <span class="link__text">Подробнее</span>
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.53317 10.8667C5.41095 10.7445 5.34695 10.5889 5.34117 10.4C5.3354 10.2111 5.39384 10.0556 5.51651 9.93335L8.78317 6.66668H1.33317C1.14428 6.66668 0.98584 6.60268 0.85784 6.47468C0.72984 6.34668 0.666062 6.18846 0.666506 6.00001C0.666506 5.81112 0.730506 5.65268 0.858506 5.52468C0.986506 5.39668 1.14473 5.3329 1.33317 5.33335H8.78317L5.51651 2.06668C5.39428 1.94446 5.33584 1.7889 5.34117 1.60001C5.34651 1.41112 5.41051 1.25557 5.53317 1.13335C5.6554 1.01112 5.81095 0.950012 5.99984 0.950012C6.18873 0.950012 6.34428 1.01112 6.46651 1.13335L10.8665 5.53335C10.9332 5.5889 10.9805 5.65846 11.0085 5.74201C11.0365 5.82557 11.0503 5.91157 11.0498 6.00001C11.0498 6.0889 11.0361 6.17223 11.0085 6.25001C10.981 6.32779 10.9336 6.40001 10.8665 6.46668L6.46651 10.8667C6.34428 10.9889 6.18873 11.05 5.99984 11.05C5.81095 11.05 5.6554 10.9889 5.53317 10.8667Z"
+                />
+              </svg>
+            </a>
+          </div>
 
           <div class="career__slider swiper">
             <ul class="career__slider-list swiper-wrapper">
@@ -377,7 +379,12 @@
                   <source srcset="./img/parrots2.webp" type="image/webp" />
                   <source srcset="./img/parrots2.jpg" />
                   <source srcset="./img/parrots2.webp" />
-                  <img src="./img/parrots2.jpg" alt="Попугаи" loading="lazy" />
+                  <img
+                    class="career__slide-img"
+                    src="./img/parrots2.jpg"
+                    alt="Попугаи"
+                    loading="lazy"
+                  />
                 </picture>
               </li>
 
@@ -386,7 +393,12 @@
                   <source srcset="./img/giraffe2.webp" type="image/webp" />
                   <source srcset="./img/giraffe2.jpg" />
                   <source srcset="./img/giraffe2.webp" />
-                  <img src="./img/giraffe2.jpg" alt="Жираф" loading="lazy" />
+                  <img
+                    class="career__slide-img"
+                    src="./img/giraffe2.jpg"
+                    alt="Жираф"
+                    loading="lazy"
+                  />
                 </picture>
               </li>
 
@@ -396,6 +408,7 @@
                   <source srcset="./img/giraffes.jpg" />
                   <source srcset="./img/giraffes.webp" />
                   <img
+                    class="career__slide-img"
                     src="./img/giraffes.jpg"
                     alt="Девушка с жирафами"
                     loading="lazy"
@@ -409,6 +422,7 @@
                   <source srcset="./img/leo2.jpg" />
                   <source srcset="./img/leo2.webp" />
                   <img
+                    class="career__slide-img"
                     src="./img/leo2.jpg"
                     alt="Львы на скале"
                     loading="lazy"
@@ -421,7 +435,12 @@
                   <source srcset="./img/meerkat.webp" type="image/webp" />
                   <source srcset="./img/meerkat.jpg" />
                   <source srcset="./img/meerkat.webp" />
-                  <img src="./img/meerkat.jpg" alt="Сурикаты" loading="lazy" />
+                  <img
+                    class="career__slide-img"
+                    src="./img/meerkat.jpg"
+                    alt="Сурикаты"
+                    loading="lazy"
+                  />
                 </picture>
               </li>
 
@@ -431,6 +450,7 @@
                   <source srcset="./img/flamingos.jpg" />
                   <source srcset="./img/flamingos.webp" />
                   <img
+                    class="career__slide-img"
                     src="./img/flamingos.jpg"
                     alt="Фламинго"
                     loading="lazy"
@@ -443,7 +463,12 @@
                   <source srcset="./img/zebra.webp" type="image/webp" />
                   <source srcset="./img/zebra.jpg" />
                   <source srcset="./img/zebra.webp" />
-                  <img src="./img/zebra.jpg" alt="Зебра" loading="lazy" />
+                  <img
+                    class="career__slide-img"
+                    src="./img/zebra.jpg"
+                    alt="Зебра"
+                    loading="lazy"
+                  />
                 </picture>
               </li>
 
@@ -452,12 +477,17 @@
                   <source srcset="./img/elephant.webp" type="image/webp" />
                   <source srcset="./img/elephant.jpg" />
                   <source srcset="./img/elephant.webp" />
-                  <img src="./img/elephant.jpg" alt="Слон" loading="lazy" />
+                  <img
+                    class="career__slide-img"
+                    src="./img/elephant.jpg"
+                    alt="Слон"
+                    loading="lazy"
+                  />
                 </picture>
               </li>
             </ul>
 
-            <div class="swiper-pagination"></div>
+            <div class="career__slider-pagination swiper-pagination"></div>
           </div>
         </div>
       </section>
