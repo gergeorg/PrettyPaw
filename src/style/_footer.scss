@@ -2,6 +2,18 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
+  &__container {
+    @include sm {
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      gap: 40px;
+    }
+
+    @include lg {
+      gap: 72px;
+    }
+  }
+
   &__logo {
     margin-bottom: 32px;
     width: 200px;
@@ -38,16 +50,21 @@
   @include sm {
     margin-bottom: 0;
   }
+
+  @include lg {
+    gap: 36px;
+  }
 }
 
 .developers {
   margin-bottom: 52px;
 
-  &__item {
+  &__item:not(:last-child) {
     margin-bottom: 19px;
   }
 
   @include sm {
+    order: 2;
     margin-bottom: 0;
   }
 }
