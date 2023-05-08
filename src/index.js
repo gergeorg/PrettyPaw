@@ -37,9 +37,26 @@ sliderInit(".career__slider", {
   },
 });
 
-const videoBg = document.querySelector(".video-bg");
+// const heroVideoBg = document.querySelector(".hero__video-bg");
 
-videoBg.innerHTML = `
+// heroVideoBg.innerHTML = `
+//     <source src="video/video.webm" type="video/webm" />
+//     <source src="video/video.mp4" type="video/mp4" />
+// `;
+
+// const locationVideoBg = document.querySelector(".location__video-bg");
+
+// locationVideoBg.innerHTML = `
+//     <source src="video/video.webm" type="video/webm" />
+//     <source src="video/video.mp4" type="video/mp4" />
+// `;
+
+const videoBg = document.querySelectorAll(".video-bg");
+
+videoBg.forEach(
+  (elem) =>
+    (elem.innerHTML = `
     <source src="video/video.webm" type="video/webm" />
     <source src="video/video.mp4" type="video/mp4" />
-`;
+`)
+);
