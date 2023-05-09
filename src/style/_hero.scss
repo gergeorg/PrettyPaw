@@ -89,6 +89,8 @@
   }
 
   @include xxl {
+    margin: 0 auto;
+    max-width: 2560px;
     background-image: url("../img/hero-bg-desktop@4x.jpg");
     background-image:
       image-set(

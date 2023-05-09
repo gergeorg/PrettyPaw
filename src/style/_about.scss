@@ -70,6 +70,11 @@
     @include xl {
       gap: 60px;
     }
+
+    @include xxl {
+      height: min-content;
+      min-height: 600px;
+    }
   }
 
   &__descr {
@@ -144,21 +149,9 @@
     background: $white;
   }
 
-  // &__slider {
-
-  // }
-
-  // &__picture-list {}
-
-  // &__slide-item {}
-
-  // &__slide-pic {}
-
   &__image {
     border-radius: 16px;
   }
-
-  // &__slider-pagination {}
 
   @include lg {
     padding: 100px 0;
