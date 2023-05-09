@@ -129,9 +129,27 @@ iframe {
     }
   }
 
+  &:focus {
+    @include xl {
+      outline: 2px solid $black;
+      border-radius: 80px;
+    }
+  }
+
+  &:hover {
+    @include xl {
+      color: $black;
+    }
+  }
+
   @include lg {
     padding: 17px 32px;
     font-size: 20px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  @include xl {
+    transition: color 0.3s ease-in-out;
   }
 }
 

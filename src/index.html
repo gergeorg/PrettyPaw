@@ -24,7 +24,7 @@
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#index" class="nav__link">Главная</a>
+              <a href="#index" class="nav__link nav__link_active">Главная</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">О&nbsp;зоосаде</a>
@@ -60,7 +60,7 @@
         ></video>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="container about__container">
           <h2 class="about__title">О компании</h2>
 
@@ -73,7 +73,11 @@
               и&nbsp;насекомых.
             </p>
 
-            <a href="#about" class="about__link link">
+            <a
+              href="#about"
+              class="about__link link"
+              aria-label="Читать подробнее о нашем зоосаде"
+            >
               <span class="link__text">Подробнее</span>
               <svg
                 width="12"
@@ -353,7 +357,7 @@
         ></video>
       </section>
 
-      <section class="career">
+      <section class="career" id="сareer">
         <div class="container career__container">
           <div class="career__content">
             <h2 class="career__title">Карьера у нас</h2>
@@ -363,7 +367,11 @@
               для людей, увлеченных животными и&nbsp;желающих развиваться
               в&nbsp;этой области.
             </p>
-            <a href="#" class="career__link link">
+            <a
+              href="#"
+              class="career__link link"
+              aria-label="Читать подробнее о карьере в нашем зоосаде"
+            >
               <span class="link__text">Подробнее</span>
               <svg
                 width="12"
@@ -582,7 +590,10 @@
 
         <ul class="footer__social-list social">
           <li class="social__item">
-            <a href="https://youtube.com/" class="social__link"
+            <a
+              href="https://youtube.com/"
+              class="social__link social__link_youtube"
+              aria-label="Ссылка на наш канал на youtube"
               ><svg
                 width="51"
                 height="36"
@@ -598,8 +609,12 @@
           </li>
 
           <li class="social__item">
-            <a href="https://t.me/" class="social__link"
-              ><svg
+            <a
+              href="https://t.me/"
+              class="social__link social__link_tg"
+              aria-label="Ссылка на наш канал в telegram"
+            >
+              <svg
                 width="50"
                 height="50"
                 viewBox="0 0 50 50"
@@ -618,13 +633,21 @@
           <ul class="developers__list">
             <li class="developers__item">
               Designer:
-              <a href="https://t.me/Mrshmallowww" class="developers__link">
+              <a
+                href="https://t.me/Mrshmallowww"
+                class="developers__link"
+                aria-label="Ссылка для связи в telegram с дизайнером сайта"
+              >
                 Anastasia Ilina
               </a>
             </li>
             <li class="developers__item">
               Developer:
-              <a href="https://t.me/gergeorg" class="developers__link">
+              <a
+                href="https://t.me/gergeorg"
+                class="developers__link"
+                aria-label="Ссылка для связи в telegram с разработчиком сайта"
+              >
                 Georgey Gerasimov
               </a>
             </li>

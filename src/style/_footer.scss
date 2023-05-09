@@ -46,6 +46,54 @@
     width: 36px;
     height: 36px;
 
+    svg {
+      transition: fill 0.3s ease-in-out;
+    }
+
+    &_youtube {
+      &:focus {
+        outline: none;
+      }
+
+      @include xl {
+        &:focus {
+          svg {
+            outline: 2px solid $black;
+            outline-offset: 0.2rem;
+            border-radius: 80px;
+          }
+        }
+
+        &:hover {
+          svg {
+            fill: hsl(2deg 64% 47%);
+          }
+        }
+      }
+    }
+
+    &_tg {
+      &:focus {
+        outline: none;
+      }
+
+      @include xl {
+        &:focus {
+          svg {
+            outline: 2px solid $black;
+            outline-offset: 0.2rem;
+            border-radius: 80px;
+          }
+        }
+
+        &:hover {
+          svg {
+            fill: hsl(200deg 100% 40%);
+          }
+        }
+      }
+    }
+
     @include lg {
       width: 50px;
       height: 50px;
@@ -66,6 +114,21 @@
 
   &__item:not(:last-child) {
     margin-bottom: 19px;
+  }
+
+  &__link {
+    @include xl {
+      transition: color 0.3s ease-in-out;
+
+      &:focus {
+        outline: 2px solid $black;
+        outline-offset: 0.1rem;
+      }
+
+      &:hover {
+        color: $white;
+      }
+    }
   }
 
   @include sm {
