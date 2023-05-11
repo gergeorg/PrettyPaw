@@ -14,12 +14,18 @@ sliderInit(".about__slider", {
   },
 });
 
+const careerSliderItems = document.querySelectorAll(".career__slider-item");
+
+careerSliderItems.forEach((item, idx) => {
+  item.classList.add(`career__slider-item_${idx % 2 ? "even" : "odd"}`);
+});
+
 sliderInit(".career__slider", {
   pagination: {
     el: ".career__slider-pagination",
   },
   breakpoints: {
-    768: {
+    576: {
       slidesPerView: "auto",
       spaceBetween: 20,
       pagination: false,
