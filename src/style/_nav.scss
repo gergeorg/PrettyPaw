@@ -66,6 +66,7 @@
       }
 
       @include xl {
+        outline: none;
         color: $white;
         background-color: $orange;
       }

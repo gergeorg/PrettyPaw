@@ -2,6 +2,9 @@
   position: relative;
 
   &__list {
+    --opacity: 0;
+    --background-image: none;
+
     position: relative;
     z-index: 5;
 
@@ -9,7 +12,24 @@
       display: flex;
       justify-content: space-between;
       min-height: 552px;
-      background-image: linear-gradient(0deg, rgb(0 0 0 / 40%), rgb(0 0 0 / 40%));
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: linear-gradient(0deg, rgb(0 0 0 / 40%), rgb(0 0 0 / 40%));
+        inset: 0;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background-image: var(--background-image);
+        background-position: center;
+        background-size: cover;
+        opacity: var(--opacity);
+        inset: 0;
+      }
     }
 
     @include xl {
@@ -200,10 +220,22 @@
     }
 
     @include lg {
-      flex: 0 0 calc(100% / 5);
+      // flex: 0 0 calc(100% / 5);
       padding: 0;
+      width: 20%;
       min-height: 552px;
       background-image: none;
+    }
+  }
+
+  &__content {
+    @include lg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: rotate(-90deg) translate(-50%, -50%);
+      transform-origin: top left;
+      cursor: pointer;
     }
   }
 
@@ -217,16 +249,14 @@
     color: $orange;
 
     @include lg {
-      position: absolute;
-      left: 50%;
-      top: 50%;
       margin-bottom: 0;
+      padding: 0 20px;
+      text-align: center;
       color: $white;
-      transform: rotate(-90deg) translate(-50%, -50%);
-      transform-origin: top left;
     }
 
     @include xl {
+      padding: 0 30px;
       font-size: 32px;
     }
   }
@@ -236,6 +266,15 @@
 
     @include lg {
       display: none;
+      padding: 0 20px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    @include xl {
+      display: none;
+      padding: 0 30px;
+      font-size: 20px;
     }
   }
 
