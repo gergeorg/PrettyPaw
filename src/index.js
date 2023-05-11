@@ -1,4 +1,5 @@
 import "./index.html";
+import "./page.html";
 
 import "swiper/scss/pagination";
 import "swiper/scss";

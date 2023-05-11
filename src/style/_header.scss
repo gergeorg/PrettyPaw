@@ -7,6 +7,10 @@
   padding: 22px 0;
   background-color: $black;
 
+  &__page {
+    position: static;
+  }
+
   &__container {
     display: flex;
     align-items: center;

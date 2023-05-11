@@ -1,0 +1,36 @@
+.page {
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 1000;
+    font-size: 52px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    margin-bottom: 40px;
+    border-radius: 16px;
+    object-fit: cover;
+
+    &_big {
+      height: 308px;
+    }
+
+    &_small {
+      height: 258px;
+    }
+
+    &_small:nth-child(2) {
+      display: none;
+    }
+  }
+
+  &__img-wrapper {}
+
+  &__link {}
+}
