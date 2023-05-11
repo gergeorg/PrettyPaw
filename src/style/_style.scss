@@ -129,15 +129,15 @@ iframe {
     }
   }
 
-  &:focus {
-    @include xl {
+  &:focus:not(:hover) {
+    @include lg {
       outline: 2px solid $black;
       border-radius: 80px;
     }
   }
 
   &:hover {
-    @include xl {
+    @include lg {
       color: $black;
     }
   }
@@ -148,7 +148,7 @@ iframe {
     transition: color 0.3s ease-in-out;
   }
 
-  @include xl {
+  @include lg {
     transition: color 0.3s ease-in-out;
   }
 }
