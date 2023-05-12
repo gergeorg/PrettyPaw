@@ -41,7 +41,7 @@
       </div>
     </header>
 
-    <main class="main container">
+    <main class="main">
       <section class="page-nav">
         <nav class="page-nav__nav">
           <ul class="page-nav__list">
@@ -55,7 +55,9 @@
               <a href="#" class="page-nav__link">Добрые дела</a>
             </li>
             <li class="page-nav__item">
-              <a href="#" class="page-nav__link">Карьера</a>
+              <a href="#" class="page-nav__link page-nav__link_active"
+                >Карьера</a
+              >
             </li>
           </ul>
         </nav>
@@ -80,11 +82,48 @@
           и&nbsp;различных других сферах.
         </p>
 
-        <img
-          src="./img/career_1.jpg"
-          alt="собака на руках"
-          class="page__img page__img_big"
-        />
+        <picture>
+          <source
+            srcset="./img/career_1-desktop.webp"
+            media="(min-width: 1280px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./img/career_1-desktop.jpg"
+            media="(min-width: 1280px)"
+          />
+
+          <source
+            srcset="./img/career_1-laptop.webp"
+            media="(min-width: 1024px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./img/career_1-laptop.jpg"
+            media="(min-width: 1024px)"
+          />
+
+          <source
+            srcset="./img/career_1-tablet.webp"
+            media="(min-width: 540px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./img/career_1-tablet.jpg"
+            media="(min-width: 540px)"
+          />
+
+          <source srcset="./img/career_1-mob.webp" />
+          <img
+            class="page__img page__img_big"
+            src="./img/career_1-mob.jpg"
+            alt="Щенок на руках доктора"
+            loading="lazy"
+          />
+        </picture>
 
         <p class="page__text">
           Компания предоставляет своим сотрудникам возможность профессионального
@@ -96,16 +135,91 @@
         </p>
 
         <div class="page__img-wrapper">
-          <img
-            src="./img/career_2.jpg"
-            alt="люди слушают лекцию"
-            class="page__img page__img_small"
-          />
-          <img
-            src="./img/career_3.jpg"
-            alt="собака на руках"
-            class="page__img page__img_small"
-          />
+          <picture class="page__img-wrapper_small">
+            <source
+              srcset="./img/career_2-desktop.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/career_2-desktop.jpg"
+              media="(min-width: 1280px)"
+            />
+
+            <source
+              srcset="./img/career_2-laptop.webp"
+              media="(min-width: 1024px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/career_2-laptop.jpg"
+              media="(min-width: 1024px)"
+            />
+
+            <source
+              srcset="./img/career_2-tablet.webp"
+              media="(min-width: 540px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/career_2-tablet.jpg"
+              media="(min-width: 540px)"
+            />
+
+            <source srcset="./img/career_2-mob.webp" />
+            <img
+              class="page__img page__img_small"
+              src="./img/career_2-mob.jpg"
+              alt="Щенок на руках доктора"
+              loading="lazy"
+            />
+          </picture>
+
+          <picture class="page__img-wrapper_small">
+            <source
+              srcset="./img/career_3-desktop.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/career_3-desktop.jpg"
+              media="(min-width: 1280px)"
+            />
+
+            <source
+              srcset="./img/career_3-laptop.webp"
+              media="(min-width: 1024px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/career_3-laptop.jpg"
+              media="(min-width: 1024px)"
+            />
+
+            <source
+              srcset="./img/career_3-tablet.webp"
+              media="(min-width: 540px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/career_3-tablet.jpg"
+              media="(min-width: 540px)"
+            />
+
+            <source srcset="./img/career_3-tablet.webp" />
+            <img
+              class="page__img page__img_small"
+              src="./img/career_3-tablet.jpg"
+              alt="Щенок на руках доктора"
+              loading="lazy"
+            />
+          </picture>
         </div>
 
         <p class="page__text">
@@ -116,11 +230,48 @@
           в&nbsp;компании и&nbsp;проходя обучение на&nbsp;месте.
         </p>
 
-        <img
-          src="./img/career_4.jpg"
-          alt="собака на руках"
-          class="page__img page__img_big"
-        />
+        <picture>
+          <source
+            srcset="./img/career_4-desktop.webp"
+            media="(min-width: 1280px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./img/career_4-desktop.jpg"
+            media="(min-width: 1280px)"
+          />
+
+          <source
+            srcset="./img/career_4-laptop.webp"
+            media="(min-width: 1024px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./img/career_4-laptop.jpg"
+            media="(min-width: 1024px)"
+          />
+
+          <source
+            srcset="./img/career_4-tablet.webp"
+            media="(min-width: 540px)"
+            type="image/webp"
+          />
+
+          <source
+            srcset="./img/career_4-tablet.jpg"
+            media="(min-width: 540px)"
+          />
+
+          <source srcset="./img/career_4-mob.webp" />
+          <img
+            class="page__img page__img_big"
+            src="./img/career_4-mob.jpg"
+            alt="Щенок на руках доктора"
+            loading="lazy"
+          />
+        </picture>
 
         <a
           href="#"

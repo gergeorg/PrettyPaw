@@ -1,4 +1,9 @@
 .page {
+  margin: 0 auto;
+
+  // max-width: 920px;
+  padding: 0 16px;
+
   &__title {
     margin-bottom: 24px;
     font-weight: 1000;
@@ -13,24 +18,69 @@
   }
 
   &__img {
+    margin: 0 auto;
     margin-bottom: 40px;
-    border-radius: 16px;
-    object-fit: cover;
-
-    &_big {
-      height: 308px;
-    }
-
-    &_small {
-      height: 258px;
-    }
+    border-radius: 20px;
 
     &_small:nth-child(2) {
       display: none;
     }
   }
 
-  &__img-wrapper {}
+  &__img-wrapper {
+    display: flex;
+    justify-content: center;
 
-  &__link {}
+    &_small {
+      &:nth-child(2) {
+        display: none;
+
+        @include md {
+          display: block;
+        }
+      }
+
+      @include lg {
+        width: 390px;
+      }
+
+      @include xl {
+        width: 445px;
+      }
+
+      @include xxl {
+        width: 50%;
+      }
+    }
+
+    @include md {
+      gap: 18px;
+    }
+
+    @include lg {
+      gap: 20px;
+    }
+
+    @include xl {
+      gap: 30px;
+    }
+  }
+
+  @include sm {
+    padding: 0 32px;
+  }
+
+  @include lg {
+    margin: 0 32px 0 auto;
+    max-width: 800px;
+  }
+
+  @include xl {
+    margin: 0 auto;
+    max-width: 920px;
+  }
+
+  @include xxl {
+    max-width: 1240px;
+  }
 }

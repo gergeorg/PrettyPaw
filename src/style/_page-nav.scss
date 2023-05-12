@@ -1,11 +1,47 @@
 .page-nav {
   display: none;
 
-  &__nav {}
+  &__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
 
-  &__list {}
+  &__link {
+    outline: 2px solid transparent;
+    outline-offset: 0.7rem;
+    border-radius: 80px;
+    font-weight: 1000;
+    font-size: 16px;
+    line-height: 1;
+    color: $white;
+    transition: outline 0.3s ease-in-out, color 0.3s ease-in-out;
 
-  &__item {}
+    &_active {
+      color: $black;
+      pointer-events: none;
+    }
 
-  &__link {}
+    &:focus:not(:hover) {
+      @include lg {
+        outline: 2px solid $black;
+      }
+    }
+
+    &:hover {
+      @include lg {
+        outline: 2px solid $black;
+        color: $black;
+      }
+    }
+  }
+
+  @include lg {
+    position: fixed;
+    left: 32px;
+    top: 216px;
+    display: block;
+  }
+
+  @include xl {
+    left: 30px;
+  }
 }

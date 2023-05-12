@@ -26,13 +26,11 @@ body {
 
 .main {
   padding-top: 40px;
+  padding-bottom: 30px;
 
   @include lg {
-    display: grid;
-    grid-template-columns: 200px 920px;
     padding-top: 100px;
     padding-bottom: 50px;
-    gap: 30px;
   }
 }
 
