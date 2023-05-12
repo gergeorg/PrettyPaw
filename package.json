@@ -3,12 +3,15 @@
   "version": "1.2.2",
   "description": "",
   "main": "index.js",
+  "homepage": "https://gergeorg.github.io/PrettyPaw",
   "scripts": {
     "start": "webpack serve",
     "webp": "node webp-convert.mjs",
     "build-dev": "webpack",
     "build-prod": "webpack --node-env=production",
-    "clear": "rd /s /q dist"
+    "clear": "rd /s /q dist",
+    "predeploy": "npm run build-prod",
+    "deploy": "gh-pages -d build-prod"
   },
   "keywords": [],
   "author": "",
@@ -44,7 +47,8 @@
     "stylelint-order": "^6.0.3",
     "webpack": "^5.81.0",
     "webpack-cli": "^5.0.2",
-    "webpack-dev-server": "^4.13.3"
+    "webpack-dev-server": "^4.13.3",
+    "gh-pages": "^5.0.0"
   },
   "dependencies": {
     "gsap": "^3.11.5",
