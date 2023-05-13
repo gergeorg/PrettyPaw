@@ -9,6 +9,7 @@ import { sliderInit } from "./modules/sliders";
 import { videoBgInit } from "./modules/videoBg";
 import { burgerControl } from "./modules/menuControl";
 import { locationHover } from "./modules/locationHover";
+import { scrollToTop } from "./modules/scrollToTop";
 
 sliderInit(".about__slider", {
   pagination: {
@@ -50,3 +51,4 @@ sliderInit(".career__slider", {
 videoBgInit();
 burgerControl();
 locationHover();
+scrollToTop("arrow-top", { hover: false });
