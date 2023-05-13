@@ -19,10 +19,6 @@
   &__text-block {
     margin-bottom: 40px;
 
-    // &:not(:last-child) {
-    //   margin-bottom: 0;
-    // }
-
     @include lg {
       margin-bottom: 60px;
     }

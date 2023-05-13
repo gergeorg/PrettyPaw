@@ -15,6 +15,7 @@ import { pageControlInit } from "./modules/pageControl";
 sliderInit(".about__slider", {
   pagination: {
     el: ".about__slider-pagination",
+    enabled: true,
   },
 });
 
@@ -27,18 +28,23 @@ careerSliderItems.forEach((item, idx) => {
 sliderInit(".career__slider", {
   pagination: {
     el: ".career__slider-pagination",
+    enabled: true,
   },
   breakpoints: {
     576: {
       slidesPerView: "auto",
       spaceBetween: 20,
-      pagination: false,
+      pagination: {
+        enabled: false,
+      },
     },
 
     1024: {
       slidesPerView: "auto",
       spaceBetween: 26,
-      pagination: false,
+      pagination: {
+        enabled: false,
+      },
     },
 
     1240: {

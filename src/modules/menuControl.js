@@ -52,11 +52,15 @@ export const burgerControl = () => {
         const x = idx % 2 ? 500 : -500;
 
         gsap.set(elem, { opacity: 0, x, duration: 1 });
+
+        if (navBtn.classList.contains("nav__burger_active")) {
+          tl.restart();
+        }
       });
     }
   };
 
-  const mediaQuery = window.matchMedia("(min-width: 1280px)");
+  const mediaQuery = window.matchMedia("(min-width: 1240px)");
 
   mediaQuery.addEventListener("change", checkScreenSize);
   checkScreenSize(mediaQuery);
