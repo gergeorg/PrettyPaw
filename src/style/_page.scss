@@ -1,59 +1,41 @@
 .page {
   margin: 0 auto;
-
-  // max-width: 920px;
   padding: 0 16px;
 
   &__title {
     margin-bottom: 24px;
     font-weight: 1000;
-    font-size: 52px;
+    font-size: 32px;
     line-height: 1;
     text-transform: uppercase;
     color: $white;
+
+    @include lg {
+      margin-bottom: 40px;
+      font-size: 52px;
+    }
   }
 
-  &__text {
+  &__text-block {
+    margin-bottom: 40px;
+
+    // &:not(:last-child) {
+    //   margin-bottom: 0;
+    // }
+
+    @include lg {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__text:not(:last-child) {
     margin-bottom: 30px;
   }
 
-  &__img {
-    margin: 0 auto;
-    margin-bottom: 40px;
-    border-radius: 20px;
-
-    &_small:nth-child(2) {
-      display: none;
-    }
-  }
-
   &__img-wrapper {
-    display: flex;
-    justify-content: center;
-
-    &_small {
-      &:nth-child(2) {
-        display: none;
-
-        @include md {
-          display: block;
-        }
-      }
-
-      @include lg {
-        width: 390px;
-      }
-
-      @include xl {
-        width: 445px;
-      }
-
-      @include xxl {
-        width: 50%;
-      }
-    }
-
-    @include md {
+    @include sm {
+      display: flex;
+      justify-content: center;
       gap: 18px;
     }
 
@@ -66,21 +48,71 @@
     }
   }
 
+  &__picture-small {
+    &:nth-child(2) {
+      display: none;
+
+      @include sm {
+        display: block;
+      }
+    }
+
+    @include lg {
+      width: calc(50% - 9px);
+    }
+
+    @include xl {
+      width: calc(50% - 10px);
+    }
+
+    @include xxl {
+      width: calc(50% - 15px);
+    }
+  }
+
+  &__picture-big {
+    @include lg {
+      height: 350px;
+    }
+
+    @include xl {
+      height: auto;
+    }
+  }
+
+  &__img {
+    margin-bottom: 40px;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+
+  &__img-small {
+    width: 100%;
+  }
+
+  &__img-big {
+    height: 308px;
+
+    @include sm {
+      height: auto;
+    }
+  }
+
   @include sm {
     padding: 0 32px;
   }
 
   @include lg {
-    margin: 0 32px 0 auto;
-    max-width: 800px;
+    margin: 0 0 0 auto;
+    max-width: 864px;
   }
 
   @include xl {
     margin: 0 auto;
-    max-width: 920px;
+    max-width: 984px;
   }
 
   @include xxl {
-    max-width: 1240px;
+    max-width: 1304px;
   }
 }

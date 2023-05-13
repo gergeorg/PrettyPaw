@@ -10,6 +10,7 @@ import { videoBgInit } from "./modules/videoBg";
 import { burgerControl } from "./modules/menuControl";
 import { locationHover } from "./modules/locationHover";
 import { scrollToTop } from "./modules/scrollToTop";
+import { pageControlInit } from "./modules/pageControl";
 
 sliderInit(".about__slider", {
   pagination: {
@@ -52,3 +53,4 @@ videoBgInit();
 burgerControl();
 locationHover();
 scrollToTop("arrow-top", { hover: false });
+pageControlInit();

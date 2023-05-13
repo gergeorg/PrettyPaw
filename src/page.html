@@ -20,7 +20,7 @@
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#index" class="nav__link nav__link_active">Главная</a>
+              <a href="#index" class="nav__link">Главная</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">О&nbsp;зоосаде</a>
@@ -32,7 +32,7 @@
               <a href="#deeds" class="nav__link">Добрые&nbsp;дела</a>
             </li>
             <li class="nav__item">
-              <a href="#сareer" class="nav__link">Карьера</a>
+              <a href="#career" class="nav__link">Карьера</a>
             </li>
           </ul>
 
@@ -43,242 +43,700 @@
 
     <main class="main">
       <section class="page-nav">
-        <nav class="page-nav__nav">
-          <ul class="page-nav__list">
-            <li class="page-nav__item">
-              <a href="#" class="page-nav__link">О зоопарке</a>
-            </li>
-            <li class="page-nav__item">
-              <a href="#" class="page-nav__link">История</a>
-            </li>
-            <li class="page-nav__item">
-              <a href="#" class="page-nav__link">Добрые дела</a>
-            </li>
-            <li class="page-nav__item">
-              <a href="#" class="page-nav__link page-nav__link_active"
-                >Карьера</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <ul class="page-nav__list">
+          <li class="page-nav__item">
+            <a href="page.html#about" class="page-nav__link">О зоопарке</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="page.html#history" class="page-nav__link">История</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="page.html#deeds" class="page-nav__link">Добрые дела</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="page.html#career" class="page-nav__link">Карьера</a>
+          </li>
+        </ul>
       </section>
 
-      <section class="page">
-        <h1 class="page__title">Карьера</h1>
+      <section class="page" id="about">
+        <h1 class="page__title">О Зоосаде</h1>
 
-        <p class="page__text">
-          Карьера в&nbsp;нашей компании может предоставить много интересных
-          и&nbsp;перспективных возможностей для людей, увлеченных животными
-          и&nbsp;желающих развиваться в&nbsp;этой области.
-        </p>
+        <div class="page__text-block">
+          <p class="page__text">
+            Этот зоопарк расположен в&nbsp;живописном месте и&nbsp;занимает
+            большую территорию. Здесь содержатся различные виды животных
+            со&nbsp;всего мира, начиная от&nbsp;крупных хищников, таких как львы
+            и&nbsp;тигры, до&nbsp;разнообразных птиц, рыб и&nbsp;насекомых.
+          </p>
 
-        <p class="page__text">
-          У&nbsp;нас есть возможности для трудоустройства в&nbsp;различных
-          должностях, начиная от&nbsp;сотрудников магазина, где можно работать
-          с&nbsp;клиентами и&nbsp;продавать товары для животных,
-          до&nbsp;ветеринарных врачей и&nbsp;специалистов по&nbsp;уходу
-          за&nbsp;животными в&nbsp;груминг-салонах. Также в&nbsp;компании есть
-          возможности для работы в&nbsp;отделе маркетинга, управления персоналом
-          и&nbsp;различных других сферах.
-        </p>
-
-        <picture>
-          <source
-            srcset="./img/career_1-desktop.webp"
-            media="(min-width: 1280px)"
-            type="image/webp"
-          />
-
-          <source
-            srcset="./img/career_1-desktop.jpg"
-            media="(min-width: 1280px)"
-          />
-
-          <source
-            srcset="./img/career_1-laptop.webp"
-            media="(min-width: 1024px)"
-            type="image/webp"
-          />
-
-          <source
-            srcset="./img/career_1-laptop.jpg"
-            media="(min-width: 1024px)"
-          />
-
-          <source
-            srcset="./img/career_1-tablet.webp"
-            media="(min-width: 540px)"
-            type="image/webp"
-          />
-
-          <source
-            srcset="./img/career_1-tablet.jpg"
-            media="(min-width: 540px)"
-          />
-
-          <source srcset="./img/career_1-mob.webp" />
-          <img
-            class="page__img page__img_big"
-            src="./img/career_1-mob.jpg"
-            alt="Щенок на руках доктора"
-            loading="lazy"
-          />
-        </picture>
-
-        <p class="page__text">
-          Компания предоставляет своим сотрудникам возможность профессионального
-          роста и&nbsp;развития, проводя регулярные тренинги и&nbsp;курсы
-          повышения квалификации. Кроме того, компания заботится о&nbsp;своих
-          сотрудниках и&nbsp;предлагает им&nbsp;конкурентную заработную плату,
-          социальные льготы, гибкий график работы и&nbsp;возможность работать
-          удаленно.
-        </p>
-
-        <div class="page__img-wrapper">
-          <picture class="page__img-wrapper_small">
-            <source
-              srcset="./img/career_2-desktop.webp"
-              media="(min-width: 1280px)"
-              type="image/webp"
-            />
-
-            <source
-              srcset="./img/career_2-desktop.jpg"
-              media="(min-width: 1280px)"
-            />
-
-            <source
-              srcset="./img/career_2-laptop.webp"
-              media="(min-width: 1024px)"
-              type="image/webp"
-            />
-
-            <source
-              srcset="./img/career_2-laptop.jpg"
-              media="(min-width: 1024px)"
-            />
-
-            <source
-              srcset="./img/career_2-tablet.webp"
-              media="(min-width: 540px)"
-              type="image/webp"
-            />
-
-            <source
-              srcset="./img/career_2-tablet.jpg"
-              media="(min-width: 540px)"
-            />
-
-            <source srcset="./img/career_2-mob.webp" />
-            <img
-              class="page__img page__img_small"
-              src="./img/career_2-mob.jpg"
-              alt="Щенок на руках доктора"
-              loading="lazy"
-            />
-          </picture>
-
-          <picture class="page__img-wrapper_small">
-            <source
-              srcset="./img/career_3-desktop.webp"
-              media="(min-width: 1280px)"
-              type="image/webp"
-            />
-
-            <source
-              srcset="./img/career_3-desktop.jpg"
-              media="(min-width: 1280px)"
-            />
-
-            <source
-              srcset="./img/career_3-laptop.webp"
-              media="(min-width: 1024px)"
-              type="image/webp"
-            />
-
-            <source
-              srcset="./img/career_3-laptop.jpg"
-              media="(min-width: 1024px)"
-            />
-
-            <source
-              srcset="./img/career_3-tablet.webp"
-              media="(min-width: 540px)"
-              type="image/webp"
-            />
-
-            <source
-              srcset="./img/career_3-tablet.jpg"
-              media="(min-width: 540px)"
-            />
-
-            <source srcset="./img/career_3-tablet.webp" />
-            <img
-              class="page__img page__img_small"
-              src="./img/career_3-tablet.jpg"
-              alt="Щенок на руках доктора"
-              loading="lazy"
-            />
-          </picture>
+          <p class="page__text">
+            В&nbsp;зоосаде созданы условия максимально приближенные
+            к&nbsp;естественной среде обитания животных. Зоопарк заботится
+            о&nbsp;благосостоянии животных, обеспечивая их&nbsp;необходимым
+            питанием, медицинским уходом и&nbsp;комфортными условиями для жизни.
+          </p>
         </div>
 
-        <p class="page__text">
-          Чтобы начать у&nbsp;нас карьеру, желательно иметь опыт работы
-          с&nbsp;животными или образование в&nbsp;соответствующей области, такой
-          как ветеринарная медицина или зоотехника. Но&nbsp;даже если у&nbsp;вас
-          нет такого опыта или образования, вы&nbsp;можете получить его, работая
-          в&nbsp;компании и&nbsp;проходя обучение на&nbsp;месте.
-        </p>
+        <figure class="page__img-wrapper">
+          <picture class="page__picture page__picture-big">
+            <source
+              srcset="./img/about_1@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
 
-        <picture>
-          <source
-            srcset="./img/career_4-desktop.webp"
-            media="(min-width: 1280px)"
-            type="image/webp"
-          />
+            <source srcset="./img/about_1@4x.jpg" media="(min-width: 1600px)" />
 
-          <source
-            srcset="./img/career_4-desktop.jpg"
-            media="(min-width: 1280px)"
-          />
+            <source
+              srcset="./img/about_1@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
 
-          <source
-            srcset="./img/career_4-laptop.webp"
-            media="(min-width: 1024px)"
-            type="image/webp"
-          />
+            <source srcset="./img/about_1@2x.jpg" media="(min-width: 1280px)" />
 
-          <source
-            srcset="./img/career_4-laptop.jpg"
-            media="(min-width: 1024px)"
-          />
+            <source srcset="./img/about_1@1x.webp" />
+            <img
+              class="page__img page__img-big"
+              src="./img/about_1@1x.jpg"
+              alt="гарна"
+              loading="lazy"
+            />
+          </picture>
+        </figure>
 
-          <source
-            srcset="./img/career_4-tablet.webp"
-            media="(min-width: 540px)"
-            type="image/webp"
-          />
+        <div class="page__text-block">
+          <p class="page__text">
+            Помимо того, что зоосад представляет интерес для туристов
+            и&nbsp;любителей животных, он&nbsp;также является важным центром
+            научных исследований, связанных с&nbsp;охраной природы
+            и&nbsp;защитой редких и&nbsp;исчезающих видов животных. Зоопарк
+            сотрудничает с&nbsp;различными научными институтами
+            и&nbsp;организациями по&nbsp;всему миру для сохранения
+            биоразнообразия на&nbsp;планете.
+          </p>
+        </div>
 
-          <source
-            srcset="./img/career_4-tablet.jpg"
-            media="(min-width: 540px)"
-          />
+        <figure class="page__img-wrapper">
+          <picture class="page__picture page__picture-small">
+            <source
+              srcset="./img/about_2@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
 
-          <source srcset="./img/career_4-mob.webp" />
-          <img
-            class="page__img page__img_big"
-            src="./img/career_4-mob.jpg"
-            alt="Щенок на руках доктора"
-            loading="lazy"
-          />
-        </picture>
+            <source srcset="./img/about_2@4x.jpg" media="(min-width: 1600px)" />
+
+            <source
+              srcset="./img/about_2@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source srcset="./img/about_2@2x.jpg" media="(min-width: 1280px)" />
+
+            <source srcset="./img/about_2@1x.webp" />
+            <img
+              class="page__img page__img-small"
+              src="./img/about_2@1x.jpg"
+              alt="Йорк на руках у девушки"
+              loading="lazy"
+            />
+          </picture>
+
+          <picture class="page__picture page__picture-small">
+            <source
+              srcset="./img/about_3@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
+
+            <source srcset="./img/about_3@4x.jpg" media="(min-width: 1600px)" />
+
+            <source
+              srcset="./img/about_3@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source srcset="./img/about_3@2x.jpg" media="(min-width: 1280px)" />
+
+            <source srcset="./img/about_3@1x.webp" />
+            <img
+              class="page__img page__img-small"
+              src="./img/about_3@1x.jpg"
+              alt="девушка в лаборатории"
+              loading="lazy"
+            />
+          </picture>
+        </figure>
+
+        <div class="page__text-block">
+          <p class="page__text">
+            Наша компания работает с&nbsp;современными стандартами
+            в&nbsp;области ухода за&nbsp;животными. У&nbsp;нас есть
+            высококвалифицированный персонал, который заботится о&nbsp;каждом
+            животном индивидуально, учитывая его потребности и&nbsp;характер.
+            Мы&nbsp;также предоставляем множество услуг, чтобы сделать
+            пребывание животного у&nbsp;нас максимально комфортным
+            и&nbsp;безопасным, включая кормление, прогулки, игры
+            и&nbsp;медицинский уход.
+          </p>
+        </div>
+
+        <figure class="page__img-wrapper">
+          <picture class="page__picture page__picture-big">
+            <source
+              srcset="./img/about_4@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
+
+            <source srcset="./img/about_4@4x.jpg" media="(min-width: 1600px)" />
+
+            <source
+              srcset="./img/about_4@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source srcset="./img/about_4@2x.jpg" media="(min-width: 1280px)" />
+
+            <source srcset="./img/about_4@1x.webp" />
+            <img
+              class="page__img page__img-big"
+              src="./img/about_4@1x.jpg"
+              alt="девушка с лошадью"
+              loading="lazy"
+            />
+          </picture>
+        </figure>
+      </section>
+
+      <section class="page" id="history">
+        <h1 class="page__title">История</h1>
+
+        <div class="page__text-block">
+          <p class="page__text">
+            Зоосад был основан много лет назад в&nbsp;центре города. Начиная
+            с&nbsp;небольшого количества животных, он&nbsp;быстро стал одним
+            из&nbsp;самых популярных мест в&nbsp;городе для посещения
+            и&nbsp;развлечения.
+          </p>
+
+          <p class="page__text">
+            Сегодня зоопарк имеет огромный ассортимент животных.
+            Он&nbsp;является домом для множества видов животных, от&nbsp;больших
+            слонов до&nbsp;маленьких хамелеонов. Животные живут в&nbsp;условиях,
+            максимально приближенных к&nbsp;их&nbsp;естественной среде обитания.
+            Зоопарк уделяет особое внимание здоровью и&nbsp;благополучию своих
+            обитателей.
+          </p>
+        </div>
+
+        <figure class="page__img-wrapper">
+          <picture class="page__picture page__picture-big">
+            <source
+              srcset="./img/history_1@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/history_1@4x.jpg"
+              media="(min-width: 1600px)"
+            />
+
+            <source
+              srcset="./img/history_1@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/history_1@2x.jpg"
+              media="(min-width: 1280px)"
+            />
+
+            <source srcset="./img/history_1@1x.webp" />
+            <img
+              class="page__img page__img-big"
+              src="./img/history_1@1x.jpg"
+              alt="Леопард на дереве"
+              loading="lazy"
+            />
+          </picture>
+        </figure>
+
+        <div class="page__text-block">
+          <p class="page__text">
+            Одной из&nbsp;главных целей зоопарка является образование
+            посетителей. Многие дети посещают зоопарк в&nbsp;школьных
+            экскурсиях, где они могут узнать больше о&nbsp;различных животных
+            и&nbsp;их&nbsp;поведении. Также зоопарк проводит мероприятия,
+            посвященные конкретным видам животных, чтобы привлечь внимание
+            к&nbsp;их&nbsp;защите в&nbsp;естественной среде обитания.
+          </p>
+
+          <p class="page__text">
+            Кроме того, зоопарк сотрудничает с&nbsp;другими зоопарками
+            по&nbsp;всему миру для обмена животными и&nbsp;исследованиями. Это
+            позволяет зоопарку иметь большой разнообразный выбор животных
+            и&nbsp;оказывать поддержку международным усилиям по&nbsp;защите
+            видов, находящихся под угрозой исчезновения.
+          </p>
+        </div>
+
+        <figure class="page__img-wrapper">
+          <picture class="page__picture page__picture-small">
+            <source
+              srcset="./img/history_2@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/history_2@4x.jpg"
+              media="(min-width: 1600px)"
+            />
+
+            <source
+              srcset="./img/history_2@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/history_2@2x.jpg"
+              media="(min-width: 1280px)"
+            />
+
+            <source srcset="./img/history_2@1x.webp" />
+            <img
+              class="page__img page__img-small"
+              src="./img/history_2@1x.jpg"
+              alt="мальчик кормит лань"
+              loading="lazy"
+            />
+          </picture>
+
+          <picture class="page__picture page__picture-small">
+            <source
+              srcset="./img/history_3@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/history_3@4x.jpg"
+              media="(min-width: 1600px)"
+            />
+
+            <source
+              srcset="./img/history_3@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/history_3@2x.jpg"
+              media="(min-width: 1280px)"
+            />
+
+            <source srcset="./img/history_3@1x.webp" />
+            <img
+              class="page__img page__img-small"
+              src="./img/history_3@1x.jpg"
+              alt="гамадрилы"
+              loading="lazy"
+            />
+          </picture>
+        </figure>
+
+        <div class="page__text-block">
+          <p class="page__text">
+            Зоопарк предлагает различные возможности для развлечения, включая
+            посещение зоопарка, участие в&nbsp;программе кормления животных,
+            а&nbsp;также возможность заняться экстримальными видами спорта,
+            такими как катание на&nbsp;тросе над зоопарком.
+          </p>
+          <p class="page__text">
+            НЗоопарк&nbsp;&mdash; это место, где люди могут насладиться природой
+            и&nbsp;узнать больше о&nbsp;мире животных. Он&nbsp;является важной
+            частью городской культуры и&nbsp;защиты животных в&nbsp;мире.
+          </p>
+        </div>
+
+        <figure class="page__img-wrapper">
+          <picture class="page__picture page__picture-big">
+            <source
+              srcset="./img/history_4@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/history_4@4x.jpg"
+              media="(min-width: 1600px)"
+            />
+
+            <source
+              srcset="./img/history_4@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/history_4@2x.jpg"
+              media="(min-width: 1280px)"
+            />
+
+            <source srcset="./img/history_4@1x.webp" />
+            <img
+              class="page__img page__img-big"
+              src="./img/history_4@1x.jpg"
+              alt="парк"
+              loading="lazy"
+            />
+          </picture>
+        </figure>
+      </section>
+
+      <section class="page" id="deeds">
+        <h1 class="page__title">дОбрые дела</h1>
+
+        <div class="page__text-block">
+          <p class="page__text">
+            Добрые дела&nbsp;&mdash; это ежегодная благотворительная акция,
+            которую проводит компания зоосада. В&nbsp;рамках этой акции компания
+            предоставляет услуги по&nbsp;уходу за&nbsp;животными из&nbsp;приютов
+            и&nbsp;бездомных животных совершенно бесплатно.
+          </p>
+        </div>
+
+        <figure class="page__img-wrapper">
+          <picture class="page__picture page__picture-big">
+            <source
+              srcset="./img/deeds_1@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
+
+            <source srcset="./img/deeds_1@4x.jpg" media="(min-width: 1600px)" />
+
+            <source
+              srcset="./img/deeds_1@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source srcset="./img/deeds_1@2x.jpg" media="(min-width: 1280px)" />
+
+            <source srcset="./img/deeds_1@1x.webp" />
+            <img
+              class="page__img page__img-big"
+              src="./img/deeds_1@1x.jpg"
+              alt="Лкот нюхает палец"
+              loading="lazy"
+            />
+          </picture>
+        </figure>
+
+        <div class="page__text-block">
+          <p class="page__text">
+            В&nbsp;течение нескольких дней в&nbsp;году, клиенты компании могут
+            привести своих домашних животных на&nbsp;процедуры груминга,
+            дрессировки, социализации и&nbsp;многие другие услуги, и&nbsp;взамен
+            сделать пожертвование на&nbsp;поддержку бездомных животных
+            и&nbsp;приютов. В&nbsp;этот период все собранные средства идут
+            на&nbsp;помощь животным, которые нуждаются в&nbsp;уходе
+            и&nbsp;любви.
+          </p>
+
+          <p class="page__text">
+            Кроме того, в&nbsp;рамках акции компания организует совместные
+            мероприятия с&nbsp;местными приютами, например, прогулки
+            с&nbsp;собаками, выставки животных и&nbsp;мастер-классы
+            по&nbsp;уходу за&nbsp;животными.
+          </p>
+        </div>
+
+        <figure class="page__img-wrapper">
+          <picture class="page__picture page__picture-small">
+            <source
+              srcset="./img/deeds_2@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
+
+            <source srcset="./img/deeds_2@4x.jpg" media="(min-width: 1600px)" />
+
+            <source
+              srcset="./img/deeds_2@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source srcset="./img/deeds_2@2x.jpg" media="(min-width: 1280px)" />
+
+            <source srcset="./img/deeds_2@1x.webp" />
+            <img
+              class="page__img page__img-small"
+              src="./img/deeds_2@1x.jpg"
+              alt="Французский бульдог"
+              loading="lazy"
+            />
+          </picture>
+
+          <picture class="page__picture page__picture-small">
+            <source
+              srcset="./img/deeds_3@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
+
+            <source srcset="./img/deeds_3@4x.jpg" media="(min-width: 1600px)" />
+
+            <source
+              srcset="./img/deeds_3@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source srcset="./img/deeds_3@2x.jpg" media="(min-width: 1280px)" />
+
+            <source srcset="./img/deeds_3@1x.webp" />
+            <img
+              class="page__img page__img-small"
+              src="./img/deeds_3@1x.jpg"
+              alt="грусный кот"
+              loading="lazy"
+            />
+          </picture>
+        </figure>
+
+        <div class="page__text-block">
+          <p class="page__text">
+            Эта акция стала не&nbsp;только благотворительным событием,
+            но&nbsp;и&nbsp;традицией компании. Она дает возможность
+            не&nbsp;только помочь бездомным животным, но&nbsp;и&nbsp;сделать
+            доброе дело, что стимулирует людей к&nbsp;заботе о&nbsp;животных
+            и&nbsp;к&nbsp;участию в&nbsp;благотворительных проектах.
+          </p>
+        </div>
+
+        <figure class="page__img-wrapper">
+          <picture class="page__picture page__picture-big">
+            <source
+              srcset="./img/deeds_4@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
+
+            <source srcset="./img/deeds_4@4x.jpg" media="(min-width: 1600px)" />
+
+            <source
+              srcset="./img/deeds_4@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source srcset="./img/deeds_4@2x.jpg" media="(min-width: 1280px)" />
+
+            <source srcset="./img/deeds_4@1x.webp" />
+            <img
+              class="page__img page__img-big"
+              src="./img/deeds_4@1x.jpg"
+              alt="сердечко из рук"
+              loading="lazy"
+            />
+          </picture>
+        </figure>
+      </section>
+
+      <section class="page" id="career">
+        <h1 class="page__title">Карьера</h1>
+
+        <div class="page__text-block">
+          <p class="page__text">
+            Карьера в&nbsp;нашей компании может предоставить много интересных
+            и&nbsp;перспективных возможностей для людей, увлеченных животными
+            и&nbsp;желающих развиваться в&nbsp;этой области.
+          </p>
+
+          <p class="page__text">
+            У&nbsp;нас есть возможности для трудоустройства в&nbsp;различных
+            должностях, начиная от&nbsp;сотрудников магазина, где можно работать
+            с&nbsp;клиентами и&nbsp;продавать товары для животных,
+            до&nbsp;ветеринарных врачей и&nbsp;специалистов по&nbsp;уходу
+            за&nbsp;животными в&nbsp;груминг-салонах. Также в&nbsp;компании есть
+            возможности для работы в&nbsp;отделе маркетинга, управления
+            персоналом и&nbsp;различных других сферах.
+          </p>
+        </div>
+
+        <figure class="page__img-wrapper">
+          <picture class="page__picture page__picture-big">
+            <source
+              srcset="./img/career_1@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/career_1@4x.jpg"
+              media="(min-width: 1600px)"
+            />
+
+            <source
+              srcset="./img/career_1@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/career_1@2x.jpg"
+              media="(min-width: 1280px)"
+            />
+
+            <source srcset="./img/career_1@1x.webp" />
+            <img
+              class="page__img page__img-big"
+              src="./img/career_1@1x.jpg"
+              alt="Щенок на руках доктора"
+              loading="lazy"
+            />
+          </picture>
+        </figure>
+
+        <div class="page__text-block">
+          <p class="page__text">
+            Компания предоставляет своим сотрудникам возможность
+            профессионального роста и&nbsp;развития, проводя регулярные тренинги
+            и&nbsp;курсы повышения квалификации. Кроме того, компания заботится
+            о&nbsp;своих сотрудниках и&nbsp;предлагает им&nbsp;конкурентную
+            заработную плату, социальные льготы, гибкий график работы
+            и&nbsp;возможность работать удаленно.
+          </p>
+        </div>
+
+        <figure class="page__img-wrapper">
+          <picture class="page__picture page__picture-small">
+            <source
+              srcset="./img/career_2@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/career_2@4x.jpg"
+              media="(min-width: 1600px)"
+            />
+
+            <source
+              srcset="./img/career_2@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/career_2@2x.jpg"
+              media="(min-width: 1280px)"
+            />
+
+            <source srcset="./img/career_2@1x.webp" />
+            <img
+              class="page__img page__img-small"
+              src="./img/career_2@1x.jpg"
+              alt="люди слушают лекцию"
+              loading="lazy"
+            />
+          </picture>
+
+          <picture class="page__picture page__picture-small">
+            <source
+              srcset="./img/career_3@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/career_3@4x.jpg"
+              media="(min-width: 1600px)"
+            />
+
+            <source
+              srcset="./img/career_3@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/career_3@2x.jpg"
+              media="(min-width: 1280px)"
+            />
+
+            <source srcset="./img/career_3@1x.webp" />
+            <img
+              class="page__img page__img-small"
+              src="./img/career_3@1x.jpg"
+              alt="поднятая рука"
+              loading="lazy"
+            />
+          </picture>
+        </figure>
+
+        <div class="page__text-block">
+          <p class="page__text">
+            Чтобы начать у&nbsp;нас карьеру, желательно иметь опыт работы
+            с&nbsp;животными или образование в&nbsp;соответствующей области,
+            такой как ветеринарная медицина или зоотехника. Но&nbsp;даже если
+            у&nbsp;вас нет такого опыта или образования, вы&nbsp;можете получить
+            его, работая в&nbsp;компании и&nbsp;проходя обучение на&nbsp;месте.
+          </p>
+        </div>
+
+        <figure class="page__img-wrapper">
+          <picture class="page__picture page__picture-big">
+            <source
+              srcset="./img/career_4@4x.webp"
+              media="(min-width: 1600px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/career_4@4x.jpg"
+              media="(min-width: 1600px)"
+            />
+
+            <source
+              srcset="./img/career_4@2x.webp"
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+
+            <source
+              srcset="./img/career_4@2x.jpg"
+              media="(min-width: 1280px)"
+            />
+
+            <source srcset="./img/career_4@1x.webp" />
+            <img
+              class="page__img page__img-big"
+              src="./img/career_4@1x.jpg"
+              alt="девушка у окна"
+              loading="lazy"
+            />
+          </picture>
+        </figure>
 
         <a
-          href="#"
+          href="https://hh.ru/"
           class="page__link link"
-          aria-label="Читать подробнее о нашем зоосаде"
+          aria-label="Смотреть вакансии в нашем зоосаде на hh.ru"
         >
-          <span class="link__text">Подробнее</span>
+          <span class="link__text">Вакансии</span>
           <svg
             width="12"
             height="12"
