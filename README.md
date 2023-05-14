@@ -1,3 +1,7 @@
+### Demo
+
+https://gergeorg.github.io/PrettyPaw/
+
 ### Запуск сервера для разработки
 
 ```shell
